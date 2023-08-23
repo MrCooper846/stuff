@@ -10,7 +10,6 @@ import smtplib, ssl
 ## email.mime subclasses
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-## The pandas library is only for generating the current date, which is not necessary for sending emails
 import pandas as pd
 firstName = 'Mohammed'
 # Define the HTML document
@@ -35,9 +34,9 @@ html = '''
     '''
 
 # Set up the email addresses and password. Please replace below with your email address and password
-email_from = 'mohamed@gulfconferences.co.uk'
-password = 'M123456789'
-email_to = 'mohamed@gulfconferences.co.uk'
+email_from = ''
+password = ''
+email_to = ''
 
 
 # Generate today's date to be included in the email Subject
