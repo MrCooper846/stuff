@@ -26,12 +26,12 @@ import pandas as pd
 # Set up the email addresses and password. Please replace below with your email address and password
 import csv
 
-with open(r"C:\Users\monke\Downloads\Copy of monkeyninja846 - Sheet3 (5).csv", 'r') as file:
+with open(r"Insert list of people to email here", 'r') as file:
     reader = csv.reader(file)
     data = list(reader)
 
-email_from = 'mohamed@gulfconferences.co.uk'
-password = 'M123456789'
+email_from = ''
+password = ''
 
 
 
@@ -82,4 +82,4 @@ def sendEmail(email_to,firstName ,email_from, password):
         server.sendmail(email_from, email_to, email_string)
         
 for x in data:
-    sendEmail(x[1],x[0],'mohamed@gulfconferences.co.uk','M123456789')
+    sendEmail(x[1],x[0],email_from,password)
